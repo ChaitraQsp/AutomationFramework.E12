@@ -47,6 +47,7 @@ public class AddProductToCartAndValidate {
 		if(ProductTitleInCart.equalsIgnoreCase(productTitle))
 		{
 			System.out.println("product successfully added to cart");
+			System.out.println("product successfully added to cart");
 			System.out.println("PASS");
 			System.out.println(ProductTitleInCart);
 		}
