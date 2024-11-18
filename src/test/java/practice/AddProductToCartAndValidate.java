@@ -13,6 +13,10 @@ public class AddProductToCartAndValidate {
 		//Step 1: Launch the browser
 		WebDriver driver = new EdgeDriver();
 		
+		
+		
+		
+		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
@@ -26,6 +30,8 @@ public class AddProductToCartAndValidate {
 		driver.findElement(By.id("login-button")).click();
 		
 		//Step 4: Click on a product
+		Thread.sleep(1000);
+		
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//div[.='Sauce Labs Backpack']")).click();
 		String productTitle = driver.findElement(By.xpath("//div[.='Sauce Labs Backpack']")).getText();
